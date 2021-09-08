@@ -1,0 +1,344 @@
+@charset "UTF-8";
+/* ================ variable.css =================*/
+/* ================CSS Reset =================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ================以下為html 最終作業 =================*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #f6f6f6;
+}
+.socialMedia a {
+  display: block;
+  text-decoration: none;
+  margin: 5px;
+}
+.socialMedia .facebook {
+  color: #526ba6;
+}
+.socialMedia .twitter {
+  color: #4cb9ee;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .Logo {
+  background-image: url(https://raw.githubusercontent.com/wei-ling-chan/-hexschool-html-final2/main/images/logo.png);
+  display: block;
+  width: 200px;
+  height: 50px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 50px;
+}
+.header .nav .navItem {
+  width: 100px;
+  text-align: center;
+}
+.header .nav .navItem ul {
+  width: 100px;
+  text-align: center;
+}
+.header .nav .navItem > a {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  color: #00cc99;
+  border-bottom: 5px solid transparent;
+  cursor: pointer;
+}
+.header .nav .navItem > a.active {
+  border-bottom: 5px solid #00cc99;
+}
+.header .nav .navItem > a:hover {
+  border-bottom: 5px solid #00cc99;
+}
+
+.banner {
+  position: relative;
+}
+.banner .swiper-slide img {
+  width: 1200px;
+  height: 350px;
+}
+.banner .bannerTitle {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  z-index: 3;
+}
+.banner .bannerTitle h2 {
+  height: 125px;
+  background-color: rgba(180, 180, 180, 0.1);
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  -webkit-transform: translateY(115px);
+          transform: translateY(115px);
+  padding-top: 30px;
+}
+
+.introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+.introduction .introductionItem {
+  width: 350px;
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+  border-bottom: 3px solid #d7d7d7;
+  border-radius: 4px;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding: 20px;
+}
+.introduction .introductionItem h3 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.introduction .introductionItem p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.introduction .introductionItem ol {
+  list-style-type: disc;
+}
+.introduction .introductionItem ol li {
+  margin-left: 20px;
+  line-height: 24px;
+}
+
+.compare {
+  margin-bottom: 50px;
+}
+.compare .green {
+  color: #5ac1a5;
+}
+.compare h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.compare table {
+  margin: 0 auto;
+  text-align: left;
+}
+.compare td {
+  border-bottom: 1px solid #e9e9e9;
+  width: 250px;
+}
+.compare td, .compare th {
+  padding: 10px;
+}
+.compare th {
+  background-color: #f7f7f7;
+  font-weight: bold;
+}
+
+.Connects {
+  background-image: url(https://raw.githubusercontent.com/wei-ling-chan/images/main/form-bg.png);
+  background-repeat: repeat-x;
+  background-color: #009872;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+.Connects h2 {
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 50px;
+}
+.Connects .Connect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.Connects .Connect textarea {
+  width: 500px;
+  margin-right: 50px;
+  border-radius: 4px;
+}
+.Connects .ConnectInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  color: white;
+}
+.Connects .ConnectInfo label, .Connects .ConnectInfo input {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+}
+.Connects .ConnectInfo input {
+  margin-bottom: 5px;
+}
+.Connects .ConnectInfo button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 20px;
+  width: 80px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00cc99;
+  color: white;
+}
+.Connects .ConnectInfo button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+footer {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer li:nth-child(1) {
+  margin-bottom: 10px;
+}
+footer a {
+  color: red;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* ================動態=================*/
+.nav ul {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  background-color: white;
+  opacity: 0.8;
+}
+.nav ul li > a:hover {
+  display: block;
+  background-color: #00cc99;
+  color: white;
+}
+.nav ul a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.nav ul a.active {
+  border-bottom: 5px solid #00cc99;
+}
+
+body {
+  position: relative;
+}
+body .btn {
+  font-size: 50px;
+  color: purple;
+  position: absolute;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1;
+}
+body .btn:hover {
+  color: blue;
+}
+
+.lightbox {
+  top: 500px !important;
+}
